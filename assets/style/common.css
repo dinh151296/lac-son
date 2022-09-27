@@ -1,0 +1,88 @@
+/*======= common style =======*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #262A37;
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    transition: .2s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+.container {
+    /* custum */
+    max-width: 1200px;
+    transition: 0.2s;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.font-inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.font-inter-medium {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.font-inter-semibold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.font-inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/* =====start header===== */
+/* ======end header====== */
