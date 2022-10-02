@@ -114,6 +114,21 @@
     border-radius: 50%;
     border: 2px solid  #A2A0A9;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-slide .slick-arrow:hover svg path {
+    fill: var(--pink);
+}
+
+.cat-slide .slick-arrow::before {
+    content: none;
+}
+
+.cat-slide .slick-arrow:hover {
+    border-color: var(--pink);
 }
 
 .cat-slide .slick-arrow.slick-prev {
@@ -122,4 +137,8 @@
 
 .cat-slide .slick-arrow.slick-next {
     right: -50px;
+}
+
+.cat-slide .slick-arrow.slick-next svg {
+    transform: rotate(180deg);
 }
