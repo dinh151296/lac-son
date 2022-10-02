@@ -11,7 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.4;
     font-weight: 400;
-    color: #262A37;
+    color: var(--grey01);
 }
 
 @media only screen and (max-width: 360px) {
@@ -29,7 +29,8 @@ a {
 
 a:hover {
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 1;
+    color: unset;
 }
 
 ul,
@@ -58,6 +59,16 @@ h1, h2, h3, h4, h5, h6, p {
     transition: 0.2s;
 }
 
+:root {
+    --grey01 : #262A37;
+    --grey02 : #6A6A6A;
+    --blue: #2A72DE;
+    --blue-gradient: linear-gradient(44.02deg, #956AEA 5.97%, #56D6E5 94%);
+    --pink: #ED2973;
+    --pink-gradient: linear-gradient(44.02deg, #ED2973 5.97%, #FE7249 94%);
+    --shadow-box: 0px 0px 20px 0px #00456312;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 960px;
@@ -84,5 +95,79 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
 }
 
+section.hero {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__inner {
+    padding-top: 105px;
+}
+
 /* =====start header===== */
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.header__inner {
+    padding: 13px 0px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 8.5%;
+}
+
+.header__logo img {
+    max-width: 138px;
+}
+
+.header__nav {
+    margin-right: 4.7%;
+}
+
+.header__nav ul li {
+    margin-right: 7.5%;
+}
+
+.header__nav ul li:last-child {
+    margin-right: 0px;
+}
+
+.header__nav ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.header__bt {
+    gap: 5px;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search input {
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    color: #fff;
+    max-width: 146px;
+    padding: 7.5px 12px;
+}
+
+.header__search svg {
+    position: absolute;
+}
 /* ======end header====== */

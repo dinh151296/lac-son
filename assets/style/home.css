@@ -1,1 +1,70 @@
 /* ========home page style======== */
+.hero-home {
+    background-image: url(../images/hero-home-bg.jpg);
+    height: 696px;
+}
+
+.hero-home__title {
+    color: #fff;
+}
+
+.hero-home__title h1 {
+    font-size: 44px;
+}
+
+.hero-home__title p {
+    font-size: 16px;
+    margin: 15px 0px 21px;
+}
+
+.link-store  {
+    margin-top: 58px;
+}
+
+.link-store img {
+    width: auto;
+    position: relative;
+    z-index: 2;
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.link-store a {
+    cursor: pointer;
+    position: relative;
+}
+
+.link-store a:hover {
+    opacity: 0.8;
+}
+
+.link-store a:nth-child(2) img {
+    margin-left: 20px;
+}
+
+.hero-home__img {
+    position: relative;
+}
+
+.hero-home__img > img {
+    margin: 0 auto;
+    width: auto;
+}
+
+.hero-home__img .__img-ab {
+    position: absolute;
+}
+
+.hero-home__img .__img-ab img {
+    width: auto;
+}
+
+.__img-ab:first-of-type {
+    top: 187px;
+    left: 0px;
+}
+
+.__img-ab:last-of-type {
+    top: 39px;
+    right: -10px;
+}
