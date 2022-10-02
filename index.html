@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
 
+    <!-- slick-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick-carousel -->
+
     <link rel="stylesheet" href="assets/style/common.css" type="text/css">
     <link rel="stylesheet" href="assets/style/home.css" type="text/css">
 </head>
@@ -23,35 +28,41 @@
                             <img src="./assets/images/logo.png" alt="Hệ thống Phản ánh hiện trường">
                         </a>
                     </div>
-                    <nav class="header__nav">
-                        <ul class="d-flex align-items-center">
-                            <li>
-                                <a href="">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="">Chuyên mục<img src="./assets/images/Expand_down_light.png" alt="Chuyên mục"></a>
-                            </li>
-                            <li>
-                                <a href="">Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a href="">Hướng dẫn</a>
-                            </li>
-                            <li>
-                                <a href="">Bản đồ</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__bt d-flex align-items-center">
-                        <div class="header__search">
-                            <input class="form-control" type="text" placeholder="Tìm kiếm...">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
-                                <path d="M20 20L17 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                    <div class="header__right d-flex align-items-center">
+                        <nav class="header__nav">
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="">Chuyên mục
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.5757 7.57574C14.8101 7.34142 15.1899 7.34142 15.4243 7.57574C15.6586 7.81005 15.6586 8.18995 15.4243 8.42426L14.5757 7.57574ZM10 13L10.4243 13.4243L10 13.8485L9.57574 13.4243L10 13ZM4.57574 8.42426C4.34142 8.18995 4.34142 7.81005 4.57574 7.57574C4.81005 7.34142 5.18995 7.34142 5.42426 7.57574L4.57574 8.42426ZM15.4243 8.42426L10.4243 13.4243L9.57574 12.5757L14.5757 7.57574L15.4243 8.42426ZM9.57574 13.4243L4.57574 8.42426L5.42426 7.57574L10.4243 12.5757L9.57574 13.4243Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="">Hướng dẫn</a>
+                                </li>
+                                <li>
+                                    <a href="">Bản đồ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__bt d-flex align-items-center">
+                            <div class="header__search">
+                                <input class="form-control" type="text" placeholder="Tìm kiếm...">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
+                                    <path d="M20 20L17 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <a href="" class="btn btn-site btn-pink-gradient">Đăng nhập</a>
+                            <a href="" class="btn btn-site btn-blue-gradien">Đăng ký</a>
                         </div>
-                        <a href="" class="btn btn-site btn-pink-gradient">Đăng nhập</a>
-                        <a href="" class="btn btn-site btn-blue-gradien">Đăng ký</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +78,7 @@
                                 Phản ánh hiện trường
                             </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tincidunt eifend odio viverra diam aliquet donec again.</p>
-                            <a href="" class="btn btn-pink-gradient">
+                            <a href="" class="btn btn-site btn-pink-gradient">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10ZM10 15.1667C9.44772 15.1667 9 14.719 9 14.1667V11H5.83333C5.28105 11 4.83333 10.5523 4.83333 10C4.83333 9.44772 5.28105 9 5.83333 9H9V5.83333C9 5.28105 9.44772 4.83333 10 4.83333C10.5523 4.83333 11 5.28105 11 5.83333V9H14.1667C14.719 9 15.1667 9.44772 15.1667 10C15.1667 10.5523 14.719 11 14.1667 11H11V14.1667C11 14.719 10.5523 15.1667 10 15.1667Z" fill="white"/>
                                 </svg>
@@ -99,7 +110,78 @@
     </section>
     
 
-    <main></main>
+    <main>
+        <div class="wrap__cat-slider">
+            <div class="container">
+                <div class="inner">
+                    <div class="cat-slide">
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Protection.svg" alt="">
+                            <p>
+                                An toàn giao thông,
+                                An ninh trật tự
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Building.svg" alt="">
+                            <p>
+                                Trật tự xây dựng,
+                                Trật tự đô thị
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Price.svg" alt="">
+                            <p>
+                                Giá cả thị trường
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Travel.svg" alt="">
+                            <p>
+                                Văn hóa, Thông tin,
+                                Du lịch
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Mediacal.svg" alt="">
+                            <p>
+                                Vệ sinh an toàn thực phẩm, Dược phẩm,
+                                Y tế cơ sở
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Environment.svg" alt="">
+                            <p>
+                                An toàn giao thông,
+                                An ninh trật tự
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Commerce.svg" alt="">
+                            <p>
+                                An toàn giao thông,
+                                An ninh trật tự
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Public.svg" alt="">
+                            <p>
+                                An toàn giao thông,
+                                An ninh trật tự
+                            </p>
+                        </div>
+                        <div class="cat-slide__item">
+                            <img src="./assets/images/Other.svg" alt="">
+                            <p>
+                                An toàn giao thông,
+                                An ninh trật tự
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- end main -->
 
     <footer></footer>
@@ -107,5 +189,22 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+        $(document).ready(function(){
+            $('.cat-slide').slick({
+                // autoplay: true,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                dots: false,
+                arrows: true,
+                centerPadding : 15,
+                nextArrow: '<button type="button" class="slick-arrow slick-next"></button>',
+                prevArrow: '<button type="button" class="slick-arrow slick-prev"></button>',
+            });
+        });
+    </script>
+
 </body>
 </html>

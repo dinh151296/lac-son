@@ -69,30 +69,20 @@ h1, h2, h3, h4, h5, h6, p {
     --shadow-box: 0px 0px 20px 0px #00456312;
 }
 
+.btn-pink-gradient {
+    background-image: var(--pink-gradient);
+    box-shadow: 0px 0px 15px 0px rgba(237, 41, 115, 0.25);
+}
+
+.btn-blue-gradien {
+    background-image: var(--blue-gradient);
+    box-shadow: 0px 0px 15px 0px rgba(145, 113, 234, 0.25);
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 960px;
     }
-}
-
-.font-inter-regular {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-.font-inter-medium {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-}
-
-.font-inter-semibold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-}
-
-.font-inter-bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
 }
 
 section.hero {
@@ -120,6 +110,12 @@ header {
     justify-content: space-between;
 }
 
+.header__right {
+    flex: 1;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
 .header__logo {
     margin-right: 8.5%;
 }
@@ -129,7 +125,7 @@ header {
 }
 
 .header__nav {
-    margin-right: 4.7%;
+    margin-right: 5.9%;
 }
 
 .header__nav ul li {
@@ -147,6 +143,26 @@ header {
     font-weight: 600;
     color: #fff;
     white-space: nowrap;
+    padding: 10px 0px;
+    transition: 0.2s;
+}
+
+.header__nav ul li a:hover svg path {
+    fill: var(--pink);
+}
+
+.header__nav ul li a:hover {
+    color: var(--pink);
+    opacity: 1;
+}
+
+.header__nav ul li a svg {
+    margin-left: 2px;
+    transition: 0.2;
+}
+
+.header__nav ul li a svg path {
+    transition: 0.2;
 }
 
 .header__bt {
@@ -164,10 +180,66 @@ header {
     border-radius: 60px;
     color: #fff;
     max-width: 146px;
+    background-color: transparent;
     padding: 7.5px 12px;
+}
+
+.header__search input:focus {
+    background-color: transparent;
 }
 
 .header__search svg {
     position: absolute;
+    right: 14px;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.header__search input::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-site {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8.5px 15px;
+    color: #fff;
+    border-radius: 20px;
+    border: unset;
+    overflow: hidden;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-site::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 140%;
+    background-color: rgba(255, 255, 255, 0.403);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255);
+    left: -50%;
+    top: 50%;
+    transition: 0.5s;
+    transform: translateY(-50%) rotate(15deg);
+}
+
+.btn-site:hover::before {
+    left: 120%;
+}
+
+.btn-site svg {
+    margin-right: 8px;
+}
+
+.btn-site:hover {
+    color: #fff;
+}
+
+
 /* ======end header====== */
