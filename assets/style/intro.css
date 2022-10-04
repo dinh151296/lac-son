@@ -1,1 +1,35 @@
 /* =====Style page giới thiệu===== */
+
+
+.intro__text {
+    font-size: 16px;
+}
+
+.intro__text p {
+    font-size: 16px;
+}
+
+.intro__text ul {
+    margin: 5px 0px 20px 0px;
+}
+
+.intro__text ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.intro__text ul li::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--grey01);
+    left: 6px;
+    top: 10px;
+}
+
+.intro__img img {
+    margin: 0 auto;
+}

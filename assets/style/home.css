@@ -1,7 +1,9 @@
 /* ========home page style======== */
+
 main.main-home-page {
     margin-top: 50px;
 }
+
 .hero-home {
     background-image: url(../images/hero-home-bg.jpg);
     height: 696px;

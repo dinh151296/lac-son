@@ -112,8 +112,53 @@ section.hero {
     background-repeat: no-repeat;
 }
 
+.hero-for-page {
+    background-image: url(../images/hero-page-bg.jpg);
+}
+
 .hero__inner {
     padding-top: 105px;
+}
+
+.hero-page__inner {
+    padding-top: 108px;
+    height: 227px;
+    color: #fff;
+}
+
+.hero-page__inner h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.breadcrumb-site {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb-site li {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.breadcrumb-site li + li::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 0px;
+    top: 48%;
+}
+
+.content-page p {
+    font-size: 16px;
 }
 
 /* =====start header===== */
