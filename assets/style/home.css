@@ -9,6 +9,7 @@ main.main-home-page {
 
 .hero-home__title {
     color: #fff;
+    padding-top: 16px;
 }
 
 .hero-home__title h1 {
@@ -146,36 +147,5 @@ main.main-home-page {
     transform: rotate(180deg);
 }
 
-.wrap-title__home {
-    margin-bottom: 30px;
-    border-bottom: 2px solid var(--grey03);
-}
 
-.wrap-title__home h2 {
-    padding: 15px;
-    background-image: var(--blue-gradient);
-    color: #fff;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 6px 6px 0px 0px;
-}
-
-.wrap-title__home a {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--blue);
-    padding: 5px 0px;
-}
-
-.wrap-title__home a  img {
-    margin-left: 3px;
-    max-width: 22px;
-}
-
-.wrap-title__home a:hover img {
-    transform: translateX(2px);
-}
 
