@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Đăng ký</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="assets/style/common.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/login.css" type="text/css">
+</head>
+<body>
+    <div class="wrap__modal-fixed">
+        <div class="modal-inner d-flex">
+            <button type="button" class="modal__close-icon">
+                <img src="./assets/images/Close_round.png" alt="">
+            </button>
+            <div class="modal__img">
+                <img src="./assets/images/login-img.jpg" alt="">
+            </div>
+            <div class="modal__form">
+                <a href="home.html" class="site__logo">
+                    <img src="./assets/images/logo-blue.png" alt="">
+                </a>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#login" role="tab"  aria-selected="true">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#register" role="tab"  aria-selected="false">Đăng ký</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" >
+                        <form action="" class="">
+                            <div class="form-group">
+                                <img src="./assets/images/User.png" alt="">
+                                <input class="form-control" type="text" placeholder="Số điện thoại đăng ký">
+                            </div>
+                            <div class="form-group">
+                                <img src="./assets/images/Lock.png" alt="">
+                                <input class="form-control" type="password" placeholder="Mật khẩu">
+                            </div>
+                            <div class="form-group d-flex justify-content-between align-items-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Nhớ tài khoản</label>
+                                </div>
+                                <a href="" class="forgot-pass">Quên mật khẩu?</a>
+                            </div>
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn-site btn-pink-gradient">
+                                    ĐĂNG NHẬP
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" >
+                        <form action="" class="">
+                            <div class="form-group">
+                                <img src="./assets/images/User.png" alt="">
+                                <input class="form-control" type="text" placeholder="Họ và tên">
+                            </div>
+                            <div class="form-group">
+                                <img src="./assets/images/Phone-pink.png" alt="">
+                                <input class="form-control" type="text" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <img src="./assets/images/Phone-pink.png" alt="">
+                                <input class="form-control" type="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <img src="./assets/images/Lock.png" alt="">
+                                <input class="form-control" type="password" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="form-group">
+                                <img src="./assets/images/Lock.png" alt="">
+                                <input class="form-control" type="password" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn-site btn-pink-gradient">
+                                    ĐĂNG KÝ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- link boot js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- link boot js -->
+</body>
+</html>
