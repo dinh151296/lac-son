@@ -327,6 +327,10 @@ header {
     gap: 8px;
 }
 
+.new__item-cm.item-category {
+    margin-bottom: 30px;
+}
+
 .new__item-cm .thumb a img {
     transition: 0.5s;
 }
@@ -445,7 +449,8 @@ header {
 }
 
 .new__item-cm.new__row .desc p {
-    margin-top: 5px;
+    margin-bottom: 6px;
+    margin-top: 0px;
     line-height: 1.2;
 }
 
