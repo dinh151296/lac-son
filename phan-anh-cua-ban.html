@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phản ánh kiến nghị</title>
+    <title>Phản ánh của bạn</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -183,7 +183,7 @@
                     <div class="col-12 col-lg-3">
                         <div class="aside__admin">
                             <ul class="menu__user-admin">
-                                <li class="current-page">
+                                <li>
                                     <a href="thong-tin-ca-nhan.html">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13.151 14.1314C12.8471 13.2808 12.1775 12.5293 11.2461 11.9932C10.3146 11.4572 9.1734 11.1666 7.99935 11.1666C6.8253 11.1666 5.68406 11.4572 4.75262 11.9932C3.82119 12.5292 3.15161 13.2808 2.84774 14.1313" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
@@ -205,7 +205,7 @@
                                         Phản ánh kiến nghị
                                     </a>
                                 </li>
-                                <li>
+                                <li class="current-page">
                                     <a href="phan-anh-cua-ban.html">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M20.8401 4.61C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.61L12.0001 5.67L10.9401 4.61C9.90843 3.57831 8.50915 2.99871 7.05012 2.99871C5.59109 2.99871 4.19181 3.57831 3.16012 4.61C2.12843 5.64169 1.54883 7.04097 1.54883 8.5C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6054C22.3096 9.93789 22.4519 9.22249 22.4519 8.5C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.61V4.61Z" stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -239,36 +239,25 @@
                     <div class="col-12 col-md-12 col-lg-9">
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="user-admin__title">Thông tin cá nhân</h2>
+                                <h2 class="user-admin__title">Phản ánh của bạn</h2>
                             </div>
-                            <div class="col-12 col-md-4 col-lg-4">
-                                <div class="user-admin__avata">
-                                    <img src="./assets/images/avata-user.png" alt="">
-                                    <p class="text-center">Nguyen Van A</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-8">
-                                <div class="user__change-info">
-                                    <div class="user-change__row d-flex align-items-center">
-                                        <label for="name">Họ và tên</label>
-                                        <input class="form-control" type="text" id="name" placeholder="Nguyen Van A">
-                                    </div>
-                                    <div class="user-change__row d-flex align-items-center">
-                                        <label for="phone">Số điện thoại</label>
-                                        <input class="form-control" type="tel" id="phone" placeholder="0986234579">
-                                    </div>
-                                    <div class="user-change__row d-flex align-items-center">
-                                        <label for="mail">Email</label>
-                                        <input class="form-control" type="email" id="mail" placeholder="nguyenvana@gmail.com">
-                                    </div>
-                                    <div class="user-change__row d-flex align-items-center">
-                                        <label for="address">Địa chỉ</label>
-                                        <input class="form-control" type="text" id="address" placeholder="An Khánh, Hoài Đức, Hà Nội">
+                            <div class="col-12">
+                                <div class="user-admin__block block-ct-pd">
+
+                                    <div class="pagination-site d-flex align-items-center justify-content-center mt-4">
+                                        <a href="">
+                                            <img src="./assets/images/Expand_left.png" alt="">
+                                        </a>
+                                        <a href="" class="curent">1</a>
+                                        <a href="">2</a>
+                                        <a href="">3</a>
+                                        <a href="">4</a>
+                                        <a href="">5</a>
+                                        <a href="">
+                                            <img src="./assets/images/Expand_right.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 text-center mt-4">
-                                <button class="user__save-change btn-site btn-pink-gradient">Lưu thay đổi</button>
                             </div>
                         </div>
                     </div>

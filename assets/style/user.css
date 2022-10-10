@@ -3,8 +3,7 @@
 .wrap__layout-admin {
     padding-top: 50px;
     padding-bottom: 50px;
-
-    min-height: 584px;
+    min-height: calc(100vh - 160px); 
 }
 
 .header__user-admin p {
@@ -218,4 +217,8 @@
  
 .upload-img__box .inner img {
     max-width: 36px;
+}
+
+.user-admin__block.block-ct-pd {
+    padding: 30px 20px;
 }
