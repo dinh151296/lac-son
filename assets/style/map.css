@@ -3,6 +3,7 @@
 .wrap__map-layout {
     position: relative;
     height: calc(100vh - 161px);
+    min-height: 580px;
 }
 
 .open__filter {

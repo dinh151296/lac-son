@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi mật khẩu</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap -->
+
+    <!-- slick-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick-carousel -->
+
+    <link rel="stylesheet" href="assets/style/common.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/user.css" type="text/css">
+</head>
+<body>
+    <header class="header__custom">
+        <div class="container">
+            <div class="header__inner d-flex align-items-center">
+                <div class="header__logo">
+                    <a href="home.html">
+                        <img src="./assets/images/logo-blue.png" alt="Hệ thống Phản ánh hiện trường">
+                    </a>
+                </div>
+                <div class="header__right d-flex align-items-center">
+                    <nav class="header__nav">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="">Chuyên mục
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5757 7.57574C14.8101 7.34142 15.1899 7.34142 15.4243 7.57574C15.6586 7.81005 15.6586 8.18995 15.4243 8.42426L14.5757 7.57574ZM10 13L10.4243 13.4243L10 13.8485L9.57574 13.4243L10 13ZM4.57574 8.42426C4.34142 8.18995 4.34142 7.81005 4.57574 7.57574C4.81005 7.34142 5.18995 7.34142 5.42426 7.57574L4.57574 8.42426ZM15.4243 8.42426L10.4243 13.4243L9.57574 12.5757L14.5757 7.57574L15.4243 8.42426ZM9.57574 13.4243L4.57574 8.42426L5.42426 7.57574L10.4243 12.5757L9.57574 13.4243Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Hướng dẫn</a>
+                            </li>
+                            <li>
+                                <a href="">Bản đồ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__bt d-flex align-items-center">
+                        <div class="header__search">
+                            <input class="form-control" type="text" placeholder="Tìm kiếm...">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
+                                <path d="M20 20L17 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="header__user header__user-admin">
+                            <img src="./assets/images/avata.png" alt="">
+                            <p class="color-grey02">Nguyen Van A
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5757 7.57574C14.8101 7.34142 15.1899 7.34142 15.4243 7.57574C15.6586 7.81005 15.6586 8.18995 15.4243 8.42426L14.5757 7.57574ZM10 13L10.4243 13.4243L10 13.8485L9.57574 13.4243L10 13ZM4.57574 8.42426C4.34142 8.18995 4.34142 7.81005 4.57574 7.57574C4.81005 7.34142 5.18995 7.34142 5.42426 7.57574L4.57574 8.42426ZM15.4243 8.42426L10.4243 13.4243L9.57574 12.5757L14.5757 7.57574L15.4243 8.42426ZM9.57574 13.4243L4.57574 8.42426L5.42426 7.57574L10.4243 12.5757L9.57574 13.4243Z" fill="#ED2973"/>
+                                </svg>
+                            </p>
+                            <div class="user-admin__box">
+                                <ul class="menu__user-admin">
+                                    <li>
+                                        <a href="thong-tin-ca-nhan.html">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.151 14.1314C12.8471 13.2808 12.1775 12.5293 11.2461 11.9932C10.3146 11.4572 9.1734 11.1666 7.99935 11.1666C6.8253 11.1666 5.68406 11.4572 4.75262 11.9932C3.82119 12.5292 3.15161 13.2808 2.84774 14.1313" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <ellipse cx="8.00065" cy="5.83329" rx="2.66667" ry="2.66667" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                            Thông tin cá nhân  
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="phan-anh-kien-nghi.html">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 9.16663L10 9.16663" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <path d="M6 6.5L8.66667 6.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <path d="M6 11.8334L8.66667 11.8334" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <path d="M12.6673 9.16667V9.83333C12.6673 11.3878 12.6673 12.1651 12.3862 12.7679C12.0882 13.4071 11.5744 13.9208 10.9352 14.2189C10.3324 14.5 9.55515 14.5 8.00065 14.5V14.5C6.44615 14.5 5.6689 14.5 5.06613 14.2189C4.4269 13.9208 3.91314 13.4071 3.61506 12.7679C3.33398 12.1651 3.33398 11.3878 3.33398 9.83333V6.5C3.33398 5.57003 3.33398 5.10504 3.43621 4.72354C3.71361 3.68827 4.52225 2.87962 5.55753 2.60222C5.93903 2.5 6.40401 2.5 7.33398 2.5V2.5" stroke="#6A6A6A" stroke-width="1.2"/>
+                                                <path d="M12 2.5L12 6.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <path d="M14 4.5L10 4.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                            Phản ánh kiến nghị
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="change-pass.html">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.66602 9.7C2.66602 8.57989 2.66602 8.01984 2.884 7.59202C3.07575 7.21569 3.38171 6.90973 3.75803 6.71799C4.18586 6.5 4.74591 6.5 5.86602 6.5H10.1327C11.2528 6.5 11.8128 6.5 12.2407 6.71799C12.617 6.90973 12.9229 7.21569 13.1147 7.59202C13.3327 8.01984 13.3327 8.5799 13.3327 9.7V9.7C13.3327 11.3802 13.3327 12.2202 13.0057 12.862C12.7181 13.4265 12.2591 13.8854 11.6947 14.173C11.0529 14.5 10.2128 14.5 8.53268 14.5H7.46602C5.78586 14.5 4.94578 14.5 4.30404 14.173C3.73956 13.8854 3.28062 13.4265 2.993 12.862C2.66602 12.2202 2.66602 11.3802 2.66602 9.7V9.7Z" stroke="#6A6A6A" stroke-width="1.2"/>
+                                                <path d="M10.6654 5.83333V5.16667C10.6654 3.69391 9.47146 2.5 7.9987 2.5V2.5C6.52594 2.5 5.33203 3.69391 5.33203 5.16667V5.83333" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                                <ellipse cx="7.99935" cy="10.5" rx="1.33333" ry="1.33333" fill="#6A6A6A"/>
+                                            </svg>
+                                            Đổi mật khẩu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.666 11.8333L13.9993 8.49996L10.666 5.16663" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14 8.5H6" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6 14.5H3.33333C2.97971 14.5 2.64057 14.3595 2.39052 14.1095C2.14048 13.8594 2 13.5203 2 13.1667V3.83333C2 3.47971 2.14048 3.14057 2.39052 2.89052C2.64057 2.64048 2.97971 2.5 3.33333 2.5H6" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__notification">
+                            <div class="notification__icon">
+                                <img src="./assets/images/notification-blue.png" alt="">
+                            </div>
+                            <div class="notification__box">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Phản ánh tụ tập gây mất trật tự an toàn xã hội
+                                        </a>
+                                        <span>6 giờ trước</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <main class="m-0">
+        <div class="wrap__layout-admin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="aside__admin">
+                            <ul class="menu__user-admin">
+                                <li >
+                                    <a href="thong-tin-ca-nhan.html">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.151 14.1314C12.8471 13.2808 12.1775 12.5293 11.2461 11.9932C10.3146 11.4572 9.1734 11.1666 7.99935 11.1666C6.8253 11.1666 5.68406 11.4572 4.75262 11.9932C3.82119 12.5292 3.15161 13.2808 2.84774 14.1313" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <ellipse cx="8.00065" cy="5.83329" rx="2.66667" ry="2.66667" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                        </svg>
+                                        Thông tin cá nhân  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="phan-anh-kien-nghi.html">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 9.16663L10 9.16663" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M6 6.5L8.66667 6.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M6 11.8334L8.66667 11.8334" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M12.6673 9.16667V9.83333C12.6673 11.3878 12.6673 12.1651 12.3862 12.7679C12.0882 13.4071 11.5744 13.9208 10.9352 14.2189C10.3324 14.5 9.55515 14.5 8.00065 14.5V14.5C6.44615 14.5 5.6689 14.5 5.06613 14.2189C4.4269 13.9208 3.91314 13.4071 3.61506 12.7679C3.33398 12.1651 3.33398 11.3878 3.33398 9.83333V6.5C3.33398 5.57003 3.33398 5.10504 3.43621 4.72354C3.71361 3.68827 4.52225 2.87962 5.55753 2.60222C5.93903 2.5 6.40401 2.5 7.33398 2.5V2.5" stroke="#6A6A6A" stroke-width="1.2"/>
+                                            <path d="M12 2.5L12 6.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M14 4.5L10 4.5" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                        </svg>
+                                        Phản ánh kiến nghị
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="phan-anh-cua-ban.html">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.8401 4.61C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.61L12.0001 5.67L10.9401 4.61C9.90843 3.57831 8.50915 2.99871 7.05012 2.99871C5.59109 2.99871 4.19181 3.57831 3.16012 4.61C2.12843 5.64169 1.54883 7.04097 1.54883 8.5C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6054C22.3096 9.93789 22.4519 9.22249 22.4519 8.5C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.61V4.61Z" stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Phản ánh của bạn
+                                    </a>
+                                </li>
+                                <li class="current-page">
+                                    <a href="change-pass.html">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.66602 9.7C2.66602 8.57989 2.66602 8.01984 2.884 7.59202C3.07575 7.21569 3.38171 6.90973 3.75803 6.71799C4.18586 6.5 4.74591 6.5 5.86602 6.5H10.1327C11.2528 6.5 11.8128 6.5 12.2407 6.71799C12.617 6.90973 12.9229 7.21569 13.1147 7.59202C13.3327 8.01984 13.3327 8.5799 13.3327 9.7V9.7C13.3327 11.3802 13.3327 12.2202 13.0057 12.862C12.7181 13.4265 12.2591 13.8854 11.6947 14.173C11.0529 14.5 10.2128 14.5 8.53268 14.5H7.46602C5.78586 14.5 4.94578 14.5 4.30404 14.173C3.73956 13.8854 3.28062 13.4265 2.993 12.862C2.66602 12.2202 2.66602 11.3802 2.66602 9.7V9.7Z" stroke="#6A6A6A" stroke-width="1.2"/>
+                                            <path d="M10.6654 5.83333V5.16667C10.6654 3.69391 9.47146 2.5 7.9987 2.5V2.5C6.52594 2.5 5.33203 3.69391 5.33203 5.16667V5.83333" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round"/>
+                                            <ellipse cx="7.99935" cy="10.5" rx="1.33333" ry="1.33333" fill="#6A6A6A"/>
+                                        </svg>
+                                        Đổi mật khẩu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.666 11.8333L13.9993 8.49996L10.666 5.16663" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 8.5H6" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 14.5H3.33333C2.97971 14.5 2.64057 14.3595 2.39052 14.1095C2.14048 13.8594 2 13.5203 2 13.1667V3.83333C2 3.47971 2.14048 3.14057 2.39052 2.89052C2.64057 2.64048 2.97971 2.5 3.33333 2.5H6" stroke="#6A6A6A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Đăng xuất
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="user-admin__title">Đổi mật khẩu</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="user__change-info change-pass">
+                                    <div class="user-change__row d-flex align-items-center">
+                                        <label for="old-pass">Nhập mật khẩu cũ&nbsp;<span>*</span></label>
+                                        <input class="form-control" type="password" id="old-pass" placeholder="Vui lòng nhập mật khẩu cũ">
+                                        <button class="cover-up"> 
+                                            <img src="./assets/images/View-white.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="user-change__row d-flex align-items-center">
+                                        <label for="new-pass">Nhập mật khẩu mới&nbsp;<span>*</span></label>
+                                        <input class="form-control" type="password" id="new-pass" placeholder="Vui lòng nhập mật khẩu mới">
+                                        <button class="cover-up"> 
+                                            <img src="./assets/images/View-white.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="user-change__row d-flex align-items-center">
+                                        <label for="retype-pass">Xác nhận mật khẩu&nbsp;<span>*</span></label>
+                                        <input class="form-control" type="password" id="retype-pass" placeholder="Vui lòng nhập xác nhận mật khẩu">
+                                        <button class="cover-up"> 
+                                            <img src="./assets/images/View-white.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button class="user__save-change btn-site btn-pink-gradient">Thực hiện</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+   
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <p class="copyright">Cơ quan chủ quản: Huyện Lạc Sơn <br>
+                    Copyright © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="send-reflect">
+        <a href="">
+            <img src="./assets/images/send-reflect.png" alt="">
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/common.js"></script>
+
+   
+</body>
+</html>

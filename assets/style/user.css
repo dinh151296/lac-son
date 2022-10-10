@@ -1,0 +1,221 @@
+/* ==========Style user admin========== */
+
+.wrap__layout-admin {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    min-height: 584px;
+}
+
+.header__user-admin p {
+    color: var(--grey02);
+}
+
+.aside__admin {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.aside__admin .menu__user-admin li a {
+    font-size: 16px;
+    gap: 9px;
+    padding: 16px 30px;
+}
+
+.aside__admin .menu__user-admin li.current-page  a {
+    background: var(--blue-gradient);
+    color: #fff;
+}
+
+.aside__admin .menu__user-admin li a:hover {
+    background: var(--blue-gradient);
+    color: #fff;
+}
+
+.aside__admin .menu__user-admin li.current-page  a svg path,
+.aside__admin .menu__user-admin li.current-page  a svg ellipse{
+    stroke: #fff;
+}
+
+.aside__admin .menu__user-admin  li a:hover svg path,
+.aside__admin .menu__user-admin  li a:hover svg ellipse { 
+    stroke: #fff;
+}
+
+.aside__admin .menu__user-admin li a svg {
+    width: 24px;
+    height: 24px;
+}
+
+.user-admin__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--pink);
+    margin-bottom: 33px;
+}
+
+.user-admin__avata {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.user-admin__avata img {
+    width: auto;
+    margin: 0 auto;
+}
+
+.user-admin__avata p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+.user__save-change {
+    font-size: 16px;
+    padding: 14px 25px;
+    border-radius: 30px;
+}
+
+.user__change-info {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 25px 28px 25px 28px;
+    overflow: hidden;
+}
+
+.user__change-info label {
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    padding-right: 10px;
+    white-space: nowrap;
+    color: var(--grey02);
+}
+
+.user__change-info label span {
+    color: var(--pink);
+}
+
+.user__change-info input.form-control {
+    max-width: 340px;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+    padding: 8.5px 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.user__change-info.change-pass input.form-control {
+    max-width: 612px;
+}
+
+.user-change__row:not(:first-child) {
+    margin-top: 16px;
+}
+
+.user-change__row {
+    position: relative;
+}
+
+.user-change__row .cover-up {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    right: 0px;
+    border-radius: 0px 3px 3px 0px;
+    background: var(--blue-gradient);
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-change__row .cover-up img {
+    max-width: 20px;
+}
+
+.user__change-info input::placeholder {
+    color: #6A6A6A;
+}
+
+.user-admin__block {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.user-admin__block h3 {
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.user-admin__block label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-admin__block label span {
+    color: var(--pink);
+}
+
+.user-admin__block input.form-control {
+    border: 1px solid #C7C7C7;
+    border-radius: 6px;
+}
+
+.user-enter__text input.form-control {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.user-enter__text input::placeholder {
+    color: #959595;
+    font-weight: 400;
+}
+
+.form-check label{
+    padding-left: 4px;
+    font-weight: 400;
+    color: var(--grey02);
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    background-color: var(--pink);
+    margin-top: 0px;
+}
+
+.upload-img__box {
+    border: 1px dashed #C7C7C7;
+    border-radius: 6px;
+    padding: 12px 13px;
+}
+
+.upload-img__box .inner {
+    border-radius: 6px;
+    background-color: #F1F8FF;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #000;
+}
+ 
+.upload-img__box .inner img {
+    max-width: 36px;
+}

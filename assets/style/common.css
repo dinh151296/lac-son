@@ -76,6 +76,18 @@ button:focus {
     --green-gradient: linear-gradient(180deg, #00A861 0%, #13D4EB 100%);
 }
 
+.color-grey01 {
+    color: var(--grey01) !important;
+}
+
+.color-grey02 {
+    color: var(--grey02) !important;
+}
+
+.color-grey03 {
+    color: var(--grey03) !important;
+}
+
 .btn-pink-gradient {
     background-image: var(--pink-gradient);
     box-shadow: 0px 0px 15px 0px rgba(237, 41, 115, 0.25);
@@ -279,6 +291,83 @@ header {
     align-items: center;
     gap: 8px;
     padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.user-admin__box {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0px;
+    height: auto;
+    width: fit-content;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #00456312;
+    padding: 5px 0px;
+    -webkit-animation: fadein .4s;
+    animation: fadein .4s;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.header__user:hover .user-admin__box {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.menu__user-admin li a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #959595;
+    transition: 0.2s;
+    gap: 7px;
+}
+
+.menu__user-admin  li a svg {
+    transition: 0.2s;
+    width: 16px;
+}
+
+.menu__user-admin  li a:hover {
+    color: var(--blue);
+}
+
+.menu__user-admin  li a:hover svg path,
+.menu__user-admin  li a:hover svg ellipse { 
+    stroke: var(--pink);
 }
 
 .header__user img {
@@ -295,6 +384,89 @@ header {
     align-items: center;
     gap: 5px;
     cursor: pointer;
+}
+
+.header__notification {
+    position: relative;
+}
+
+.notification__box {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0px;
+    width: 304px;
+    height:auto;
+    padding: 20px 8px 20px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #00456312;
+    z-index: 3;
+    display: none;
+    -webkit-animation: fadein .4s;
+    animation: fadein .4s;
+}
+
+.notification__box.active {
+    display: block;
+}
+
+.notification__box  ul {
+    height: 405px;
+    padding-right: 7px;
+    overflow-y: auto;
+}
+
+.notification__box  ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.notification__box  ul::-webkit-scrollbar-thumb {
+    width: 6px;
+    border-radius: 6px;
+    background-color: #ccc;
+}
+
+.notification__box  ul li {
+    margin-bottom: 11px;
+    position: relative;
+    padding-left: 23px;
+}
+
+.notification__box  ul li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--pink);
+    border-radius: 50%;
+    left: 0px;
+    top: 4px;
+}
+
+.notification__box  ul li span {
+    font-size: 12px;
+    color: #959595;
+}
+
+.notification__box  ul li a {
+    display: block;
+    line-height: 1.22;
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey02);
+}
+
+.notification__box  ul li a:hover {
+    color: var(--blue);
+}
+
+.notification__icon  {
+    cursor: pointer;
+}
+
+.notification__icon img {
+    max-width: 31px;
 }
 
 .header__search {
@@ -339,6 +511,7 @@ header {
 header.header__custom {
     position: static;
     background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #00456312;
 }
 
 .header__custom .header__nav ul li a {
@@ -379,6 +552,7 @@ header.header__custom {
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .btn-site::before {
