@@ -245,8 +245,9 @@ header {
     margin-right: 5.9%;
 }
 
-.header__nav ul li {
+.header__nav  ul li {
     margin-right: 7.5%;
+    position: relative;
 }
 
 .header__nav ul li:last-child {
@@ -260,15 +261,15 @@ header {
     font-weight: 600;
     color: #fff;
     white-space: nowrap;
-    padding: 10px 0px;
+    padding: 14px 0px;
     transition: 0.2s;
 }
 
-.header__nav ul li a:hover svg path {
+.header__nav  ul li a:hover svg path {
     fill: var(--pink);
 }
 
-.header__nav ul li a:hover {
+.header__nav  ul li a:hover {
     color: var(--pink);
     opacity: 1;
 }
@@ -282,8 +283,165 @@ header {
     transition: 0.2;
 }
 
+.sub-menu {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #00456312;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.5s;
+    -webkit-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -moz-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -o-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+}
+
+.sub-menu ul li:last-child a {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.sub-menu ul li:first-child a {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.inner-sub__menu ul li:last-child a {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.inner-sub__menu ul li:first-child a {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.inner-sub__menu {
+    left: 100%;
+    top: 0;
+    z-index: 100;
+    width: fit-content;
+    display: none;
+    overflow: hidden;
+}
+
+.inner-sub__menu ul li a {
+    padding: 7.5px 20px 7.5px 20px;
+    white-space: nowrap;
+}
+
+.header__nav  ul li:hover > .sub-menu  {
+    opacity: 1;
+    visibility: visible;
+    transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -webkit-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -moz-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -o-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    display: block;
+}
+
+.sub-main__menu ul li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -webkit-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -moz-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -o-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+}
+
+.header__nav ul li:hover  .sub-menu li {
+    opacity: 1;
+    visibility: visible;
+    transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -webkit-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -moz-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+    -o-transition: cubic-bezier(0.25, 0.1, 0.32, 0.83) 0.3s;
+
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(1) {
+    -webkit-transition-delay: 180ms;
+    transition-delay: 180ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(2) {
+    -webkit-transition-delay: 280ms;
+    transition-delay: 280ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(3) {
+    -webkit-transition-delay: 380ms;
+    transition-delay: 380ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(4) {
+    -webkit-transition-delay: 80ms;
+    transition-delay: 480ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(5) {
+    -webkit-transition-delay: 580ms;
+    transition-delay: 580ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(6) {
+    -webkit-transition-delay: 680ms;
+    transition-delay: 680ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(7) {
+    -webkit-transition-delay: 780ms;
+    transition-delay: 780ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(8) {
+    -webkit-transition-delay: 880ms;
+    transition-delay: 880ms;
+}
+
+.header__nav  ul li:hover .sub-menu li:nth-child(9) {
+    -webkit-transition-delay: 980ms;
+    transition-delay: 980ms;
+}
+
+.sub-main__menu {
+    left: 0;
+    width: 402px;
+}
+
 .header__bt {
     gap: 5px;
+}
+
+.sub-menu ul li {
+    margin-right: 0px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0px, -8px, 0px);
+    -webkit-transform: translate3d(0px, -8px, 0px);
+    -moz-transform: translate3d(0px, -8px, 0px);
+}
+
+.sub-menu ul li a {
+    justify-content: space-between;
+    font-weight: 500;
+    color: var(--grey01);
+    padding: 7.5px 16px 7.5px 20px;
+    font-size: 14px;
+
+}
+
+.sub-menu ul li a:hover {
+    background-color: #ECECEC;
+    color: var(--blue);
+}
+
+.sub-menu ul li a:hover svg path {
+    fill: var(--blue);
 }
 
 .header__user {

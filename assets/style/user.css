@@ -222,3 +222,88 @@
 .user-admin__block.block-ct-pd {
     padding: 30px 20px;
 }
+
+.wrap__table-user {
+    width: 100%;
+}
+
+.table__user-handle {
+    margin-bottom: 0px;
+}
+
+table.table__user-handle th,
+.table__user-handle td {
+    vertical-align: middle;
+    text-align: center;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px 14px;
+    max-width: 227px;
+}
+
+.table__user-handle td {
+    padding: 14px 0px;
+}
+
+.table__user-handle thead tr  {
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.table__user-handle thead th {
+    font-weight: 600;
+}
+
+.table__user-handle thead th:first-child {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.table__user-handle thead th:last-child {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.table__user-handle tbody td .inner-item {
+    padding: 14px 14px;
+    background-color: #F8F8F8;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.table__user-handle tbody td .inner-item  strong {
+    color: #3E3E3E;
+}
+
+.table__user-handle tbody tr td:first-child  .inner-item {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.table__user-handle tbody tr td:last-child  .inner-item {
+    border-radius: 0px 6px 6px 0px;
+}
+
+td button.btn-site {
+    border-radius: 6px;
+    white-space: nowrap;
+    max-height: 36px;
+}
+
+td.status button.btn-site {
+    padding: 8.5px 19px;
+
+}
+
+td.action button.btn-site {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+td.action button.btn-site img {
+    max-width: 20px;
+}
