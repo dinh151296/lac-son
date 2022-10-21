@@ -94,10 +94,41 @@ main.main-home-page {
     padding: 45px 85px 44px;
 }
 
+.cat-slide__item {
+    display: block;
+}
+
 .cat-slide__item img {
     margin: 0 auto;
     width: auto;
     max-width: 100px;
+}
+
+.cat-slide__item svg {
+    margin: 0 auto;
+    width: auto;
+    max-width: 100px;
+    display: block;
+    transition: 0.2s;
+}
+
+.cat-slide__item svg path {
+    transition: 0.2s;
+}
+
+.cat-slide__item .thumb {
+    background: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    transition: background  0.2s;
+}
+
+.cat-slide__item .thumb:hover {
+    background: var(--pink-gradient);
+}
+
+.cat-slide__item .thumb:hover svg path {
+    fill: #fff;
 }
 
 .cat-slide__item {
@@ -108,7 +139,7 @@ main.main-home-page {
     font-size: 16px;
     max-width: 170px;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
