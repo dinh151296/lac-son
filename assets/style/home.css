@@ -271,6 +271,7 @@ main.main-home-page {
     }
     .wrap__cat-slider {
         margin-top: -40px;
+        overflow-x: hidden;
     }
     .hero-home__title h1 {
         font-size: 22px;
