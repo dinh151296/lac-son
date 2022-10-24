@@ -15,7 +15,7 @@ body {
     background-color: #F5F5F5;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 768px) {
     body {
         min-width: 320px;
         overflow-x: hidden;
@@ -111,8 +111,8 @@ button:focus {
 }
 
 main {
-    margin-top: 70px;
-    margin-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 60px;
 }
 
 @media (max-width: 1024px) {
@@ -220,6 +220,7 @@ header {
     left: 0px;
     width: 100%;
     height: auto;
+    z-index: 1000;
 }
 
 .header__inner {
@@ -908,6 +909,7 @@ header.header__custom {
     margin-bottom: 30px;
     border-bottom: 2px solid var(--grey03);
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .wrap-title__block h2 {
@@ -975,6 +977,7 @@ aside {
 
 .wrap__chart {
     width: 100%;
+    max-width: 420px;
 }
 
 .wrap__chart img {
@@ -1027,6 +1030,10 @@ aside {
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
+}
+
+.video__yt img {
+    width: 100%;
 }
 
 .video__yt button {
@@ -1236,5 +1243,152 @@ footer {
     100% {
         width: 110px;
         height: 110px;
+    }
+}
+
+.notification__sp {
+    display: none;
+}
+
+.home-content__sp {
+    display: none;
+}
+
+/* ================ responsive ================ */
+@media only screen and (max-width: 1200px) {
+    .header__logo {
+        margin-right: 40px;
+    }
+    .header__nav ul li a {
+        font-size: 15px;
+    }
+    .header__nav ul li {
+        margin-right: 14px;
+    }
+    .header__right {
+        justify-content: flex-end;
+    }
+    .header__nav {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        background-color: #fff;
+        box-shadow: 0px 0px 20px 0px #00456312;
+    }
+    .header__logo {
+        margin-right: 0px;
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__bt .btn-site  {
+        display: none;
+    }
+    .header__search input {
+        background-color: #F3F3F3;
+        border-radius: 60px;
+        width: 100%;
+        padding: 9px 12px 9px 54px;
+        font-size: 16px;
+        max-width: unset;
+        color: #000;
+    }
+    .header__search svg {
+        left: 20px;
+        right: unset;
+    }
+    .header__search input::placeholder {
+        color: var(--grey02);
+        font-size: 16px;
+    }
+    .header__inner {
+        padding: 16px 0px 16px;
+    }
+    .header__bt,
+    .header__search {
+        width: 100%;
+    }
+    .header__search  svg  path,
+    .header__search  svg  circle {
+        stroke: var(--pink);
+    }
+    .notification__sp {
+        display: block;
+    }
+    .notification__sp button {
+        background-color: transparent;
+        border: 0px;
+        outline: none;
+        padding: 7px 7px 4px 13px;
+        cursor: pointer;
+    }
+    .notification__sp button img {
+        max-width: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+   
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .wrap-title__block h2 {
+        font-size: 18px;
+    }
+    .title__news-list {
+        font-size: 16px;
+    }
+    .send-reflect {
+        display: none;
+    }
+    .home-content__pc {
+        display: none;
+    }
+    .home-content__sp {
+        display: block;
+    }
+    .block-title__sp {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--pink);
+    }
+    .user-option__sp {
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .user-option__sp li {
+        width: calc(100%/3 - 10px);
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px #005EEC12;
+        padding: 12px 10px;
+    }
+    .user-option__sp li a {
+        display: block;
+    }
+    .user-option__sp li a  img {
+        max-width: 40px;
+        margin: 0 auto;
+    }
+    .user-option__sp li a p {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .user-option__sp li:nth-child(3n + 3) {
+        margin-right: 0px;
     }
 }
