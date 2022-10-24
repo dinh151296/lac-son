@@ -1424,19 +1424,66 @@ footer {
         text-align: center;
         display: block;
         padding: 9px 5px 17px;
+        white-space: nowrap;
+        position: relative;
+        max-height: 70px;
+    }
+    .footer-menu__sp li a .__icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 auto 4px;
+        background: url(../images/css_sprites_icon-footer-sp.png);
+        background-repeat: no-repeat;
+    }
+    .footer-menu__sp li:nth-child(1) a .__icon {
+        background-position: -314px -10px;
+    }
+    .footer-menu__sp li:nth-child(1).active a .__icon {
+        background-position: -138px -10px;
+    }
+    .footer-menu__sp li:nth-child(2) a .__icon {
+        background-position:  -182px -10px;
+    }
+    .footer-menu__sp li:nth-child(2).active a .__icon {
+        background-position:  -50px -10px;
+    }
+    .footer-menu__sp li:nth-child(4) a .__icon {
+        background-position:  -226px -10px;
+    }
+    .footer-menu__sp li:nth-child(4).active a .__icon {
+        background-position:  -94px -10px;
+    }
+    .footer-menu__sp li:nth-child(5) a .__icon {
+        background-position:  -270px -10px;
+    }
+    .footer-menu__sp li:nth-child(5).active a .__icon {
+        background-position:  -10px -10px;
+    }
+    .footer-menu__sp li:nth-child(3) a .__icon {
+        background: none;
+    }
+    .footer-menu__sp li a .__icon-center {
+        position: absolute;
+        width: 54px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 4px solid #FFFFFF;
+        background: var(--pink-gradient);
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
     }
     .footer-menu__sp li.active a {
         color: var(--pink);
     }
-    .footer-menu__sp li.active svg path {
-        stroke: var(--pink);
-    }
-    .footer-menu__sp li a svg {
-        display: block;
-        width: 24px;
-        height: 24px;
-        margin: 0 auto;
-        margin-bottom: 4px;
-    }
-
+    
 }   
+
+@media only screen and (max-width: 360px) {
+    .footer-menu__sp li a {
+        padding: 9px 2px 14px;
+    }
+}
